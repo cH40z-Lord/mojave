@@ -1,0 +1,14 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+    - "7"
+before_install:
+    - npm install -g kaba-cli
+before_script:
+    - kaba js
+addons:
+    browserstack:
+        username: "kaieichinger1"
+        access_key:
+            secure: "C4jQO4o1T0JYfRwCNdhHtos+gsKFIOCsmHBlP+kyVuxMmJK0S9pgWQSJ2EN5EoXhozsOyW5LtapQzYWsGK43s8NsYJbfQYnnGLu/OzV5Bf2DIi1A2WRIDsP2Z+XNDE85Lr+qbBn1+IR8h4EghUWPusNdSn4AmunGIRI5SIg8tJpzvysABZaeBsxb5BgbbeFhYiF1G/XB3Gu4shP1A8nBwRKxIURge9XeBdP4SIaDN+Yq3m6JIoTg8GsVQaNLS38ChJ+rWYjs20JvEKZb+wlH+92XQ1Uncq/oI7mJkXeFUPJF3R18cWPLybeqSKuDibfCQ6r+/XaL51KgFa8YhrSoLW9Bxa98ARIGfdd7UNVuCcf4AM8t+Tpz4OU1HH8lUU+Q5Wj8beNqnCd7Ln32YZKk/uOPVnN4R+5mVEZOFEWUDVPmR7r66SGINjigOXOAhJIbeVZ2WHUPPvWc6hLnJcyswKwaGkx17IGQtnGeIFfUx+y84BNqEXSTB8M+kkMCOBtnz3f/FyhVUkFPW65K+rAI/y2X9+d0Y5rcDT/rx74t2x5nHQ40cONlUJRDUJp9YKr2o1D3rDRZKdeKmwZc7NQk5QDok02t7nHX8uas0OihQIA/570yoxXrTU4SranZF77ZbemslqP7s5A13+HpmcQwOLJs8KAfOlVlSHqbgZtTKPo="
