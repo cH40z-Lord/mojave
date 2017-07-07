@@ -5,13 +5,13 @@ const process = require("process");
 
 const config = require('../browserstack.json');
 
-const envUser = process.env.BROWSERSTACK_USER;
+const envUser = process.env.CI_BROWSERSTACK_USER;
 if (envUser)
 {
     config.username = envUser;
 }
 
-const envAccessKey = process.env.BROWSERSTACK_ACCESS_KEY;
+const envAccessKey = process.env.CI_BROWSERSTACK_ACCESS_KEY;
 if (envAccessKey)
 {
     config.key = envAccessKey;
