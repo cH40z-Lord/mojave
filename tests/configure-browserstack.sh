@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -n "$CI_BROWSERSTACK_USER" ]]; then
+    export BROWSERSTACK_USER="$CI_BROWSERSTACK_USER"
+fi
+
+if [[ -n "$CI_BROWSERSTACK_ACCESS_KEY" ]]; then
+    export BROWSERSTACK_ACCESS_KEY="$CI_BROWSERSTACK_ACCESS_KEY"
+fi

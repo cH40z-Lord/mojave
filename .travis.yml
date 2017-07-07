@@ -8,6 +8,7 @@ before_install:
 - npm install -g kaba-cli
 before_script:
 - kaba js
+- bash tests/configure-browserstack.sh
 addons:
   browserstack:
     username: "kaieichinger1"
