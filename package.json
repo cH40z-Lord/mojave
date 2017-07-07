@@ -21,7 +21,7 @@
     },
     "license": "BSD-3-Clause",
     "scripts": {
-        "test": "./node_modules/.bin/browserstack-runner"
+        "test": "./tests/run-browserstack.js"
     },
     "devDependencies": {
         "browserstack-runner": "^0.5.1",
