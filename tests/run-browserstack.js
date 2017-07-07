@@ -5,7 +5,7 @@ const path = require("path");
 const process = require("process");
 
 let config = null;
-let configPath = process.env.BROWSERSTACK_JSON || "../browserstack.json";
+let configPath = process.env.BROWSERSTACK_JSON || "browserstack.json";
 configPath = path.resolve(path.relative(process.cwd(), configPath));
 
 console.log(`BrowserStack config: ${configPath}`);
