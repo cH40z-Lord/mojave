@@ -8,7 +8,8 @@ before_install:
 - npm install -g kaba-cli
 before_script:
 - kaba js
-- bash tests/configure-browserstack.sh
+- [[ -n "$CI_BROWSERSTACK_USER" ]] && export BROWSERSTACK_USER="$CI_BROWSERSTACK_USER"
+- [[ -n "$CI_BROWSERSTACK_ACCESS_KEY" ]] && export BROWSERSTACK_ACCESS_KEY="$CI_BROWSERSTACK_ACCESS_KEY"
 addons:
   browserstack:
     username: "kaieichinger1"
