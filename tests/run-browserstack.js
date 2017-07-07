@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const browserstackRunner = require("browserstack-runner");
+const path = require("path");
 const process = require("process");
 
 let config = null;
